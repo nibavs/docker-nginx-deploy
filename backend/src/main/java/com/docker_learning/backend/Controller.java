@@ -20,4 +20,9 @@ public class Controller {
         entities.add(new Entity(3, "Third", "Third description"));
         return ResponseEntity.ok(entities);
     }
+
+    @GetMapping("/hello")
+    public ResponseEntity<String> hello() {
+        return ResponseEntity.ok("Hello deploy!");
+    }
 }
