@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
       getEntities();
-  })
+  }, [])
 
   return (
     <div className="App">

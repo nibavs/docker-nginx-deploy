@@ -15,7 +15,10 @@ To make it work, you should build three images and run containers on ports:
 ```
 
 ## Docker compose
-
+```bash
+docker compose up
+```
+This command will start application using compose.yml file. Compose file using inside itself docker files, which are written for backend and frontend.
 
 
 
