@@ -1,27 +1,51 @@
 .App {
   width: 100vw;
   height: 100vh;
+  background-image: url('images/back.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  font-family:'Gilroy', Arial, sans-serif;
+}
+
+.App-container {
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 50px;
 }
 
 .App-title {
-  font-size: 3rem;
+  font-size: 45px;
   display: flex;
   justify-content: center;
-  margin: 0 0 40px;
 }
 
-.App-content {
-  margin: 0 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.App-desc {
+  font-size: 25px;
+  max-width: 500px;
+  margin-bottom: 50px;
 }
 
-.App-entity {
-  background: aquamarine;
-  padding: 20px 30px;
-  border-radius: 10px;
+.App-button {
+  display: inline-block;
+  color: #000;
+  line-height: 70px;
+  max-width: 450px;
+  height: 70px;
+  background-color: #FFBA01;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
 }
+
+.App-button:hover {
+  background-color: rgb(217, 159, 0);
+  cursor: pointer;
+}
+
