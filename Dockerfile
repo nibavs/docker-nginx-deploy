@@ -1,10 +1,7 @@
 FROM node:alpine AS frontend-base
-COPY package.json package-lock.json ./
+COPY ./frontend/package.json ./frontend/package-lock.json ./
 RUN npm install
-COPY . .
-
-FROM frontend-base AS frontend-dev
-CMD ["npm", "start"]
+COPY frontend .
 
 FROM frontend-base AS frontend-build
 RUN npm run build
